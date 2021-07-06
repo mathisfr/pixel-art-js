@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app_obf.js?v=1.0" type="text/javascript"></script>
+    <link rel="stylesheet" href="style_obf.css?v=1.0">
+    <title>||PixelART||</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="api/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="pixelArtTool">
+        <div id="grille"></div>
+        <div id="colorChoice">
+            <button class="btn" id="red" onclick="selectColor(this);">Crayon "<span style="color:red;">Rouge</span>"
+                </button>
+            <button class="btn" id="blue" onclick="selectColor(this);">Crayon "<span style="color:blue;">Bleu</span>"
+                </button>
+            <button class="btn" id="green" onclick="selectColor(this);">Crayon "<span style="color:green;">Vert</span>"
+                </button>
+            <button class="btn" id="black" onclick="selectColor(this);">Crayon "<span style="color:black;">Noir</span>"
+                </button>
+            <button class="btn" id="white" onclick="selectColor(this);"><span>Gomme</span></button>
+        </div>
+        <div id="set-def">
+            <div id="set-def-def">
+                <h3>Régler la résolution:</h3>
+                    <input type="range" id="set-def-scroll" min="1" max="40" value="10">
+                    <p id="set-def-value"></p>
+            </div>
+            <div id="set-def-eff">
+                <h3>Effets:</h3>
+                    <div id="checkbox">
+                        <label id="label-check-around" for="check-around"><input name ="check-around"
+                                                                                   type="checkbox"
+                                                                                   id="check-around"
+                                                                                   onchange="effectSetting(this);">Pixels en
+                            points</label>
+                        <label id="label-check-grid" for="check-grid"><input name="check-grid"
+                                                                             type="checkbox"
+                                                                             id="check-grid"
+                                                                             onchange="effectSetting(this);">Afficher
+                            la grille</label>
+                    </div>
+                <h5>(Les effets s'appliquent à la sauvegarde)</h5>
+            </div>
+            <div id="set-def-edi">
+                <h3>Édition:</h3>
+                    <button class="btn2" id="delete" onclick="deleteDraw();">Effacer</button>
+                    <button class="btn2" id="save" onclick="savePixelArt();">Sauvegarder</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
