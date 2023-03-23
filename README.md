@@ -14,4 +14,4 @@ Pixel Art JS is a web application that allows you to create pixelated images usi
 5. Click on the "Download" button to save the image in PNG format
 6. Click on the "Clear" button to clear the grid and start over
 
-*Note: This application works best on modern web browsers such as Google Chrome, Mozilla Firefox, Safari, or Microsoft Edge.*
+*Note: This application works best on modern web browsers such as Google Chrome, Mozilla Firefox or Microsoft Edge.*
